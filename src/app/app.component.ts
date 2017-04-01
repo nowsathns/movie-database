@@ -8,7 +8,7 @@ import {Movie} from './movie';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'Movie Database!';
   movie$: Observable<Movie[]>;
   constructor(private movieService: MovieService) {}
