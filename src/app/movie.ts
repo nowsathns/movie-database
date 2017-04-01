@@ -4,3 +4,10 @@ export interface Movie {
   des: string;
   img: string;
 }
+
+export interface MovieDetail {
+  id: number;
+  name: string;
+  story: string;
+  img: string;
+}
