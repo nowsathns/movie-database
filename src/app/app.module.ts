@@ -9,6 +9,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import {MovieService} from './movie.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     MaterialModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

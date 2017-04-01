@@ -1,4 +1,5 @@
- const AllMovies = [{
+ import {Movie} from './movie';
+ const AllMovies: Movie[] = [{
       id: 1,
       name: 'Matrix',
       des: ' A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.',
