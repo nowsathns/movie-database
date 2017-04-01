@@ -1,4 +1,5 @@
- import {Movie, MovieDetail} from './movie';
+ import {Movie} from './movie';
+ import {MovieDetail} from './movie-detail';
  const AllMovies: Movie[] = [{
       id: 1,
       name: 'Matrix',
