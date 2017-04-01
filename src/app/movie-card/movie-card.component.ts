@@ -15,7 +15,7 @@ export class MovieCardComponent implements OnInit {
   ngOnInit() {
   }
   selectMovie() {
-    console.log(this.movie.id);
+    // console.log(this.movie.id);
     this.movieId.emit(this.movie.id);
   }
 }
