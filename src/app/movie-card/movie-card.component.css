@@ -1,0 +1,12 @@
+.example-card {
+  width: 300px;
+}
+img{
+  height: 400px;
+
+}
+
+:host .example-card{
+   margin: 5px;
+
+}
