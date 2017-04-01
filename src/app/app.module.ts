@@ -8,11 +8,13 @@ import {MaterialModule} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 import { MovieCardComponent } from './movie-card/movie-card.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule,
