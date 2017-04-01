@@ -10,9 +10,9 @@ import {Movie} from './movie';
 })
 export class AppComponent implements OnInit {
   title = 'Movie Database!';
-  movie$: Observable<Movie[]>;
+  movies$: Observable<Movie[]>;
   constructor(private movieService: MovieService) {}
   ngOnInit() {
-    this.movie$ = this.movieService.getMovie();
+    this.movies$ = this.movieService.getMovie();
   }
   }

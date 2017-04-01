@@ -1,2 +1,5 @@
 <md-toolbar color="primary">{{title}}</md-toolbar>
-<app-movie-card></app-movie-card>
+<div *ngIf="movies$ | async as movies; else loading"  fxLayout="row">
+<app-movie-card [movie]="eachMovie" *ngFor="let eachMovie of movies"></app-movie-card>
+</div>
+<ng-template #loading>Loading...</ng-template>
