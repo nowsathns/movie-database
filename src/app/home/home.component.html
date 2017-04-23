@@ -1,0 +1,23 @@
+<h1>Welcome to the movie database</h1>
+
+<!--Relative path-->
+<!--<a [routerLink]="['home']">Reload page (Relative)</a>-->
+
+<!--Absolute Path-->
+<a [routerLink]="['/home']">Reload page (Absolute)</a>
+
+<h2>Alternatives</h2>
+<md-list >
+  <h3>Works</h3>
+  <md-list-item><a routerLink="/home">Reload page (Absolute)</a><p class="info">routerLink="/home"</p></md-list-item>
+  <md-list-item><a routerLink="../home">Reload page (Relative)</a><p class="info">routerLink="../home"</p></md-list-item>
+  <md-divider></md-divider>
+  <h3>Error</h3>
+  <md-list-item><a routerLink="home">Reload page (Relative)</a><p class="info">routerLink="home"</p></md-list-item>
+  <md-list-item><a routerLink="./home">Reload page (Relative)</a><p class="info">routerLink="./home"</p></md-list-item>
+  <md-list-item></md-list-item>
+</md-list>
+<button md-raised-button (click)="gotoMovie()" color="primary">Goto Movie</button>
+
+<!--<a [routerLink]="['/home']">Reload page (Absolute)</a>-->
+

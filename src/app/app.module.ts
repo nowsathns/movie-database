@@ -10,19 +10,26 @@ import 'hammerjs';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import {MovieService} from './movie.service';
+import { HomeComponent } from './home/home.component';
+import { MovieSectionComponent } from './movie-section/movie-section.component';
+import {RouterModule} from '@angular/router';
+import {TABS_ROUTES} from './main-routes';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieCardComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    HomeComponent,
+    MovieSectionComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    RouterModule.forRoot(TABS_ROUTES),
   ],
   providers: [MovieService],
   bootstrap: [AppComponent]

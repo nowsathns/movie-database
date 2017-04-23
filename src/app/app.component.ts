@@ -11,15 +11,12 @@ import {MovieDetail} from './movie-detail';
 })
 export class AppComponent implements OnInit {
   title = 'Movie Database!';
-  movies$: Observable<Movie[]>;
-  movieDetail$: Observable<MovieDetail>;
-  movieId: number;
-  constructor(private movieService: MovieService) {}
+  activeLinkIndex = 0;
+  tabLinks = [
+    {label: 'Home', link: 'home'},
+    {label: 'Movie', link: 'movie-section'},
+  ];
+  constructor() {}
   ngOnInit() {
-    this.movies$ = this.movieService.getMovie();
-    // this.movieDetail$ = this.movieService.getMovieDetail(1);
-  }
-  setMovieId(id: any) {
-    this.movieDetail$ = this.movieService.getMovieDetail(id);
   }
   }

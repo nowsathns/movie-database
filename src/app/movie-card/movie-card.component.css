@@ -1,12 +1,20 @@
 .example-card {
-  width: 300px;
-}
-img{
-  height: 400px;
+  /*width: 300px;*/
+  /*transform: scale(0.5);*/
+  max-width: 200px;
+  margin: 0 auto;
 
 }
+/*img{*/
+  /*max-height: 200px;*/
+  /*max-width: 150px;*/
+/*}*/
 
+[md-card-image]{
+  min-height: 200px;
+}
 :host .example-card{
    margin: 5px;
+  /*max-height: 200px;*/
 
 }
