@@ -23,7 +23,8 @@ export class MovieSectionComponent implements OnInit {
     this.movies$ = this.movieService.getMovie();
   }
   setMovieId(id: any) {
-    this.movieDetail$ = this.movieService.getMovieDetail(id);
+    // this.movieDetail$ = this.movieService.getMovieDetail(id);
+    this.router.navigate([id],{relativeTo:this.route});
   }
   // Relative programatic Navigation
   goBack(){

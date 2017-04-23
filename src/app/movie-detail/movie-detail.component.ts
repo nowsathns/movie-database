@@ -9,7 +9,6 @@ import {MovieDetail} from '../movie-detail';
 export class MovieDetailComponent implements OnInit {
   @Input()
   movieDetail: MovieDetail;
-
   constructor() {
   }
 
