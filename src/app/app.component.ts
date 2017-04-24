@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   activeLinkIndex = 0;
   tabLinks = [
     {label: 'Home', link: 'home'},
-    {label: 'Movie', link: 'movie'},
+    {label: 'Movie', link: 'movie-section'},
   ];
   constructor() {}
   ngOnInit() {

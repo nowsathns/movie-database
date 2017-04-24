@@ -17,7 +17,7 @@ import {ActivatedRoute, Params, Router} from '@angular/router';
     button{
       margin: auto 10px;
     }
-  
+   
   `]
 })
 export class MovieDetailSectionComponent implements OnInit {
@@ -29,18 +29,18 @@ export class MovieDetailSectionComponent implements OnInit {
 
   ngOnInit() {
     // this.movieDetail$ = this.movieService.getMovieDetail(id);
-    const id = this.route.snapshot.params['id'];
-    this.movieDetail$ = this.movieService.getMovieDetail(parseInt(id));
-    console.log(id)
+    // const id = this.route.snapshot.params['id'];
+    // this.movieDetail$ = this.movieService.getMovieDetail(parseInt(id));
+    // console.log(id)
 
 
     // Link Observables
 
-  // this.route.params.subscribe(
-  //   (params: Params) => {
-  //     this.movieDetail$ = this.movieService.getMovieDetail(parseInt(params['id']));
-  //   }
-  // )
+  this.route.params.subscribe(
+    (params: Params) => {
+      this.movieDetail$ = this.movieService.getMovieDetail(parseInt(params['id']));
+    }
+  )
 
   }
 

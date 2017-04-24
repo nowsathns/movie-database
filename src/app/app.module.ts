@@ -10,12 +10,20 @@ import 'hammerjs';
 import {HomeComponent} from './home/home.component';
 import {RouterModule} from '@angular/router';
 import {TABS_ROUTES} from './main-routes';
+import {MovieCardComponent} from './movie-card/movie-card.component';
+import {MovieDetailComponent} from './movie-detail/movie-detail.component';
+import {MovieDetailSectionComponent} from "app/movie-detail/movie-detail-section/movie-detail-section.component";
+import {MovieSectionComponent} from './movie-section/movie-section.component';
+import {MovieService} from './movie.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-
+    MovieCardComponent,
+    MovieDetailComponent,
+    MovieSectionComponent,
+    MovieDetailSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +33,7 @@ import {TABS_ROUTES} from './main-routes';
     FlexLayoutModule,
     RouterModule.forRoot(TABS_ROUTES),
   ],
-
+  providers: [MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,5 +9,6 @@ import {MovieDetailSectionComponent} from './movie-detail/movie-detail-section/m
 export const TABS_ROUTES: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component:HomeComponent},
-  {path:'movie-section', loadChildren:'app/movie/movie.module#MovieModule'}
+  {path:'movie-section', component:MovieSectionComponent},
+  {path:'movie-section/:id', component:MovieDetailSectionComponent}
 ];
